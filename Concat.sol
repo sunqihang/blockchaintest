@@ -20,3 +20,4 @@ import "github.com/Arachnid/solidity-stringutils/strings.sol";
             listString = concatList(listString, list[i]);
         }	
     }
+	}
