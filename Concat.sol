@@ -14,4 +14,9 @@ import "github.com/Arachnid/solidity-stringutils/strings.sol";
         }
         return s4.toSlice().concat(s2.toSlice());
     }
+	
+	function getStringList (string[] list) internal returns (string listString) {
+        for(uint i = 0; i < list.length; i++) {
+            listString = concatList(listString, list[i]);
+        }	
     }
