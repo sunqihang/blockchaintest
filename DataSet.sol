@@ -68,6 +68,8 @@ library DataSet {
     struct BrokerMap {
         address brokerAddr;
         string[] securityList;
+		address[]  clientList;
+        mapping (address => uint) byClient;		
         mapping (string => AgentSecurity) bySecurity;
     }
 
