@@ -7,8 +7,8 @@ library DataSet {
         uint collateralAmt;
     }
 
-    struct RateMap {
-        string rate;
+    struct FeeMap {
+        string fee;
         uint loanAmt;  
         uint collateralAmt;
         address[] agentList;        
@@ -19,9 +19,9 @@ library DataSet {
 
     struct ClientBroker {
         address brokerAddr;        
-        string[] rateList;
+        string[] feeList;
         address[] agentList;
-        mapping (string => RateMap) byRate;
+        mapping (string => FeeMap) byFee;
         mapping (address => AgentMap) byAgent;        
     }
 
@@ -45,8 +45,8 @@ library DataSet {
 
     struct BrokerSecurity {
         string cusip;
-        string[] rateList;
-        mapping (string => RateMap) byRate;
+        string[] feeList;
+        mapping (string => FeeMap) byFee;
     }
 
     struct Broker {
