@@ -1,6 +1,6 @@
  pragma solidity ^0.4.10;
 
-library DataSet { 
+library CollateralDataStructs { 
   struct AgentMap {
         address agentAddr;        
         uint loanAmt;  
