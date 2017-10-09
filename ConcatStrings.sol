@@ -1,6 +1,6 @@
 pragma solidity ^0.4.10;
-import './strings.sol'; // best way to do an external libray that isn't on npm
-// import "github.com/Arachnid/solidity-stringutils/strings.sol";
+//import './strings.sol'; // best way to do an external libray that isn't on npm
+ import "github.com/Arachnid/solidity-stringutils/strings.sol";
     
 library ConcatStrings {
     using strings for *;
